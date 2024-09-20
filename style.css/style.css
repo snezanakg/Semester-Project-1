@@ -1,0 +1,126 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header and Footer */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+header img {
+    width: 120px; /* Adjust this size to match your design */
+    height: auto;
+}
+
+header h1 {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #4CAF50;
+    padding: 1rem 0;
+}
+
+nav ul li {
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Section Styles */
+section {
+    padding: 2rem 0;
+}
+
+h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin: 1rem 0;
+    line-height: 1.8;
+}
+
+/* Responsive Grid */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Card Styles */
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card p {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+/* Footer Styles */
+footer p a {
+    color: white;
+    text-decoration: underline;
+}
