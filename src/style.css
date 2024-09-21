@@ -1,16 +1,19 @@
-/* Global Styles */
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Container */
 .container {
     width: 90%;
     margin: 0 auto;
@@ -25,16 +28,15 @@ header {
     background-color: #4CAF50;
     color: white;
     padding: 1rem 2rem;
-    flex-wrap: wrap; /* Added for mobile responsiveness */
+    flex-wrap: wrap;
 }
 
 header img {
-    width: 120px; 
+    width: 120px;
     height: auto;
 }
 
 header h1 {
-    margin-left: 1rem;
     font-size: 1.5rem;
 }
 
@@ -61,7 +63,7 @@ nav ul {
     justify-content: space-around;
     background-color: #4CAF50;
     padding: 1rem 0;
-    flex-wrap: wrap; /* Added for mobile responsiveness */
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -78,45 +80,49 @@ nav ul li a:hover {
     color: #ffeb3b;
 }
 
-/* Section Styles */
-section {
-    padding: 2rem 0;
-}
-
-h2 {
+/* Heading Styles */
+h1, h2 {
     text-align: center;
     color: #4CAF50;
     margin-bottom: 1rem;
 }
 
+h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+/* Paragraph and Text Styling */
 p {
     margin: 1rem 0;
     line-height: 1.8;
+    text-align: center;
 }
 
-/* Responsive Grid */
+/* Card Grid System */
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    margin-bottom: 2rem;
 }
 
-/* Card Styles */
 .card {
     background-color: white;
     padding: 1.5rem;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease; /* For hover effect */
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.05); /* Simple hover effect */
+    transform: scale(1.05);
 }
 
 .card img {
     width: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
@@ -125,22 +131,93 @@ p {
     font-size: 1rem;
 }
 
-/* Media Queries for Mobile */
+/* Form Styling (applies to all forms across the site) */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
+    /* Stack grid items in a single column */
     .grid-3 {
-        grid-template-columns: 1fr; /* Stack cards in a single column on small screens */
+        grid-template-columns: 1fr;
     }
 
+    /* Adjust navigation layout on mobile */
     nav ul {
-        flex-direction: column; /* Stack navigation links vertically */
+        flex-direction: column;
+        align-items: center;
     }
 
+    /* Header layout for small screens */
     header {
         flex-direction: column;
         text-align: center;
     }
 
     header h1 {
-        margin-left: 0; /* Remove left margin on mobile */
+        margin-left: 0;
+        font-size: 1.25rem;
+    }
+
+    /* Form and container adjustments for small screens */
+    .container {
+        width: 95%;
+    }
+
+    form {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    nav ul li {
+        padding: 0.5rem;
+    }
+
+    footer {
+        padding: 1rem;
     }
 }
