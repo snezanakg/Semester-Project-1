@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribution - BGD-Bio Science Museum</title>
+    <link rel="stylesheet" href="src/style.css"> 
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="assets/images/logo.png" alt="BGD-Bio Science Museum Logo">
+        <h1>BGD-Bio Science Museum</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exhibition.html">Exhibitions</a></li>
+            <li><a href="visit.html">Visit</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contribution.html">Contribute</a></li> 
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section>
+            <h2>Contribute to the Museum</h2>
+            <p>We greatly appreciate your interest in contributing to the BGD-Bio Science Museum. You can help by donating, volunteering, or supporting us in various ways.</p>
+
+            <!-- Contribution Form -->
+            <form action="#" method="POST">
+                <label for="contribution-type">How would you like to contribute?</label>
+                <select id="contribution-type" name="contribution-type" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="donation">Donation</option>
+                    <option value="volunteer">Volunteer</option>
+                    <option value="support">Support</option>
+                    <option value="internship">Internship</option>
+                </select>
+
+                <!-- Name Fields -->
+                <div class="form-row">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+
+                <!-- Email -->
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Message -->
+                <label for="message">Why are you interested in contributing?</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 BGD-Bio Science Museum | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
