@@ -18,3 +18,5 @@ This project was developed as part of the **FED MAR24 program at NoroffFEU**. Th
 ## 🛠️ Setup & Installation
 To run the project locally:
    git clone https://github.com/snezanakg/Semester-Project-1.git
+📸 **Teaser Image:**  
+![Rainy Days](https://github.com/snezanakg/PORTFOLIO-1/blob/main/assets/images/placeholder.png)
